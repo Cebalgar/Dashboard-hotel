@@ -10,11 +10,3 @@ export const Container = styled.div`
   background-color: #fff;
 `;
 
-export const LoginContainer = styled.div`
-  text-align: center;
-  width: 20rem;
-  margin: 10rem auto;
-  padding: 5% 0%;
-  border-radius: 0.8rem;
-  background-color: #fff;
-`;

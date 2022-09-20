@@ -1,37 +1,43 @@
 
 import React, {useState} from "react";
-import {useNavigate, useLocation} from "react-router-dom";
+
+import {useNavigate} from "react-router-dom";
 import styled from "styled-components";
 
 
 
 export const Login = (props) => {
 const navigate = useNavigate();
-const location = useLocation();
+
+//const shouldRediedt=true;
 
   
-const [username, setUsername] = useState("");
-const [password, setPassword] = useState("");
+const [username, setUsername] = useState("celia");
+const [password, setPassword] = useState("12345");
 
-//const users =[{
-    //username:"celia",
-    //password: "12345"
-//}]
+// const users =[{
+//     username:"celia",
+//     password: "12345"
+// }]
+
+// useEffect(()=>{
+//   if(shouldRediedt)
+//   navigate("/")
+// },[navigate, shouldRediedt])
 
 
-    const handleSubmit = event =>{
-        event.preventDefault();
-        // const account = users.find((user)=> user.username === username);
-       // console.log(account, username, password, users);
-        
-        if(username === "celia" && password === "12345"){
-            props.setAuth(true);
-            const from = location.state?.from?.pathname || "/";
-            navigate(from, {replace:true}) ;  
-          }else{
-            props.setAuth(false);
-          }
-    }
+const handleSubmit = event =>{
+  event.preventDefault();
+  // const account = users.find((user)=> user.username === username);
+ // console.log(account, username, password, users);
+  
+  if(username === "celia" && password === "12345"){
+      props.setAuth(true);
+
+     return  navigate('/') ;  
+  }
+    
+}
 
     const Container = styled.div`
     width: 100%;
@@ -106,7 +112,7 @@ const [password, setPassword] = useState("");
           name="Username" 
           value={username}
           onChange={(e)=>setUsername(e.target.value)}
-          required
+       
            />
           <Label>
             Password:
@@ -116,7 +122,7 @@ const [password, setPassword] = useState("");
           name="password" 
           value={password}
           onChange={(e)=>setPassword(e.target.value)}
-          required
+    
             />
           <Button type="submit">
             Login
@@ -126,4 +132,4 @@ const [password, setPassword] = useState("");
       </Subcontainer>
     </Container>
   );
-};
+}

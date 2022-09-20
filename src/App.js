@@ -25,14 +25,13 @@ import './App.css';
 
 
 function PrivateRoute(props){
-  let location = useLocation();
+  const location = useLocation();
 
   if(!props.auth)
-  return <Navigate to="/login" state={{ from: location }} replace/>
+  return <Navigate to="/login" state={{ from: location }} replace/>;
   
   return props.children;
 }
-
 
 
 function App() {
@@ -48,8 +47,6 @@ useEffect(()=>{
 
   return (
     <div className="App">
-   
-  
 
       <Routes>
               <Route path="login" element={<Login setAuth={setAuth} />} />
@@ -59,13 +56,14 @@ useEffect(()=>{
               <PrivateRoute>
                 <Navbar setAuth={setAuth}/>
               </PrivateRoute>
-            }/>
+            }/> 
       
               <Route path="/" 
               element={
               <PrivateRoute>
                 <Dashboard/>
-              </PrivateRoute>}/>
+              </PrivateRoute>}
+             />
               <Route path="/bookings" 
               element={
               <PrivateRoute>
@@ -84,9 +82,9 @@ useEffect(()=>{
               />
               <Route path="/rooms"
                element={
-              <PrivateRoute>
-                <Rooms/>
-              </PrivateRoute>}
+             
+                <Rooms/>}
+          
 
               />
               <Route path="/rooms/:id" 
@@ -94,7 +92,6 @@ useEffect(()=>{
               <PrivateRoute>
                 <RoomDetails/>
               </PrivateRoute>}
-
               />
               <Route path="/rooms/new" 
               element={
@@ -105,7 +102,7 @@ useEffect(()=>{
               <Route path="/users" 
               element={
               <PrivateRoute>
-              <Users/>
+                <Users/>
               </PrivateRoute>}
               />
               <Route path="/users/id" 
