@@ -1,8 +1,7 @@
-import styled from "styled-components";
+
 import React, {useState} from "react";
 import { Navigate } from "react-router-dom";
-
-
+import styled from "styled-components";
 
 
 
@@ -17,7 +16,7 @@ const users =[{
 }]
 
 
-    const handleSumit = event =>{
+    const handleSubmit = event =>{
         event.preventDefault();
         const account = users.find((user)=> user.username === username);
         if(account && account.password === password){
@@ -26,6 +25,7 @@ const users =[{
             
         }
     }
+
     const Container = styled.div`
     width: 100%;
     height: 100%;
@@ -35,38 +35,38 @@ const users =[{
     font-size: 20px;
     justify-content: center;
     text-align: center;
-  `;
-  const Subcontainer = styled.div`
+    `;
+    const Subcontainer = styled.div`
     position: absolute;
     top: 45vh;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 10px;
     box-shadow: 0px 16px 30px #00000014;
-  `;
-  const Form = styled.form`
+    `;
+    const Form = styled.form`
     background-color: #ffffff;
     padding: 30px;
     border-radius: 12px;
-  `;
-  const H2 = styled.h2`
+    `;
+    const H2 = styled.h2`
     color: #e23428;
     line-height: 30px;
     cursor: default;
-  `;
-  const Label = styled.label`
+    `;
+    const Label = styled.label`
     display: block;
     text-align: left;
-  `;
-  const Input = styled.input`
+    `;
+    const Input = styled.input`
     font-size: 18px;
     padding: 5px;
     margin-bottom: 30px;
     border: none;
     outline: none;
     border-bottom: 2px solid #c5c5c5;
-  `;
-  const Button = styled.button`
+    `;
+    const Button = styled.button`
     display: block;
     border: none;
     border-radius: 12px;
@@ -80,17 +80,16 @@ const users =[{
       color: #ebf1ef;
       background-color: #135846;
     }
-  `;
-  const P = styled.p`
+    `;
+    const P = styled.p`
     font-size: 12px;
-  `;
-  
-  
+    `;
+
   return (
     <Container>
       <Subcontainer>
-        <Form onSumit={handleSumit}>
-          <img src="./asset/logo.png" alt="" />
+        <Form onSubmit={handleSubmit}>
+          <img src="" alt="" />
           <H2>Login</H2>
           <Label>
             Username:

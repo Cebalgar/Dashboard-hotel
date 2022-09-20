@@ -46,28 +46,35 @@ useEffect(()=>{
 
   return (
     <div className="App">
-     <Navbar/>
-     <Routes>
-     <Route path="/rooms" element={(<PrivateRoute auth={auth}>
-     <Routes>
-      <Route path="/" element={<Dashboard/>}/>
-      <Route path="/bookings" element={<Bookings/>}/>
-      <Route path="/bookings/:id" element={<BookingDetails/>}/>
-      <Route path="/bookings/new" element={<NewBooking/>}/>
-      <Route path="/rooms" element={<Rooms/>}/>
-      <Route path="/rooms/:id" element={<RoomDetails/>}/>
-      <Route path="/rooms/new" element={<NewRoom/>}/>
-      <Route path="/users" element={<Users/>}/>
-      <Route path="/users/id" element={<UserDetails/>}/>
-      <Route path="users/new" element={<NewUser/>}/>
-      <Route path="/contacts" element={<Contacts/>}/>
-      <Route path="/contacts/:id" element={<ContactDetails/>}/>
    
-    </Routes>
-    </PrivateRoute>
-     )}/>
-     <Route path="login" element={<Login setAuth={setAuth}/>}/>
-     </Routes>
+    
+
+      <Routes>
+      <Route path="login" element={<Login setAuth={setAuth} />} />
+
+      <Route
+        element={
+          <PrivateRoute auth={auth}>
+            <Navbar setAuth={setAuth} auth={auth} />
+          </PrivateRoute>
+        }
+      ></Route>
+          <Route path="/" element={<Dashboard/>}/>
+          <Route path="/bookings" element={<Bookings/>}/>
+          <Route path="/bookings/:id" element={<BookingDetails/>}/>
+          <Route path="/bookings/new" element={<NewBooking/>}/>
+          <Route path="/rooms" element={<Rooms/>}/>
+          <Route path="/rooms/:id" element={<RoomDetails/>}/>
+          <Route path="/rooms/new" element={<NewRoom/>}/>
+          <Route path="/users" element={<Users/>}/>
+          <Route path="/users/id" element={<UserDetails/>}/>
+          <Route path="users/new" element={<NewUser/>}/>
+          <Route path="/contacts" element={<Contacts/>}/>
+          <Route path="/contacts/:id" element={<ContactDetails/>}/>
+    
+        </Routes>
+ 
+
     </div>
   );
 }

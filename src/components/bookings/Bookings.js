@@ -1,4 +1,5 @@
 import React from 'react'
+import { bookingData } from '../../data/bookingData'
 
 const Bookings = () => {
   return (

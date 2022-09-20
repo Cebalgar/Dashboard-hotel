@@ -1,4 +1,5 @@
 import React from 'react'
+import { contactData } from '../../data/contactData'
 
 const Contacts = () => {
   return (

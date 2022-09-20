@@ -1,8 +1,9 @@
 import React from 'react'
+import { Container } from "../styled/Containers"
 
 const Dashboard = () => {
   return (
-    <div>Dashboard</div>
+    <Container>Dashboard</Container>
   )
 }
 
