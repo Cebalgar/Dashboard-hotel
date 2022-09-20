@@ -16,7 +16,7 @@ import NewUser from "./components/users/NewUser";
 import Contacts from "./components/contacts/Contacts";
 import ContactDetails from "./components/contacts/ContactDetails";
 
-import { Navigate, Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes,useLocation } from "react-router-dom";
 import {Login} from "./components/login/Login"
 
 import { useEffect,useState } from "react";
@@ -25,8 +25,10 @@ import './App.css';
 
 
 function PrivateRoute(props){
+  let location = useLocation();
+
   if(!props.auth)
-  return <Navigate to="/login" state={{ from: window.location }}replace/>
+  return <Navigate to="/login" state={{ from: location }} replace/>
   
   return props.children;
 }
@@ -47,32 +49,91 @@ useEffect(()=>{
   return (
     <div className="App">
    
-    
+  
 
       <Routes>
-      <Route path="login" element={<Login setAuth={setAuth} />} />
+              <Route path="login" element={<Login setAuth={setAuth} />} />
 
-      <Route
-        element={
-          <PrivateRoute auth={auth}>
-            <Navbar setAuth={setAuth} auth={auth} />
-          </PrivateRoute>
-        }
-      ></Route>
-          <Route path="/" element={<Dashboard/>}/>
-          <Route path="/bookings" element={<Bookings/>}/>
-          <Route path="/bookings/:id" element={<BookingDetails/>}/>
-          <Route path="/bookings/new" element={<NewBooking/>}/>
-          <Route path="/rooms" element={<Rooms/>}/>
-          <Route path="/rooms/:id" element={<RoomDetails/>}/>
-          <Route path="/rooms/new" element={<NewRoom/>}/>
-          <Route path="/users" element={<Users/>}/>
-          <Route path="/users/id" element={<UserDetails/>}/>
-          <Route path="users/new" element={<NewUser/>}/>
-          <Route path="/contacts" element={<Contacts/>}/>
-          <Route path="/contacts/:id" element={<ContactDetails/>}/>
-    
-        </Routes>
+            
+            <Route element={
+              <PrivateRoute>
+                <Navbar setAuth={setAuth}/>
+              </PrivateRoute>
+            }/>
+      
+              <Route path="/" 
+              element={
+              <PrivateRoute>
+                <Dashboard/>
+              </PrivateRoute>}/>
+              <Route path="/bookings" 
+              element={
+              <PrivateRoute>
+                <Bookings/>
+              </PrivateRoute>}/>
+              <Route path="/bookings/:id" 
+              element={
+              <PrivateRoute>
+                <BookingDetails/>
+              </PrivateRoute>}/>
+              <Route path="/bookings/new" 
+              element={
+              <PrivateRoute>
+                <NewBooking/>
+              </PrivateRoute>}
+              />
+              <Route path="/rooms"
+               element={
+              <PrivateRoute>
+                <Rooms/>
+              </PrivateRoute>}
+
+              />
+              <Route path="/rooms/:id" 
+              element={
+              <PrivateRoute>
+                <RoomDetails/>
+              </PrivateRoute>}
+
+              />
+              <Route path="/rooms/new" 
+              element={
+              <PrivateRoute>
+                <NewRoom/>
+              </PrivateRoute>}
+              />
+              <Route path="/users" 
+              element={
+              <PrivateRoute>
+              <Users/>
+              </PrivateRoute>}
+              />
+              <Route path="/users/id" 
+              element={
+              <PrivateRoute>
+                <UserDetails/>
+              </PrivateRoute>}
+              />
+              <Route path="users/new" 
+              element={
+              <PrivateRoute>
+                <NewUser/>
+              </PrivateRoute>}
+              />
+              <Route path="/contacts" 
+              element={
+              <PrivateRoute>
+                <Contacts/>
+              </PrivateRoute>}
+              />
+              <Route path="/contacts/:id" 
+              element={
+              <PrivateRoute>
+                <ContactDetails/>
+              </PrivateRoute>}
+              />
+  
+      </Routes>
  
 
     </div>

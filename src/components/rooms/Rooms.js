@@ -3,7 +3,7 @@ import { roomsData } from '../../data/roomsData'
 
 
 const Rooms = () => {
-  const [rooms, setRooms] =useState(roomsData);
+ 
 
   return (
     <>

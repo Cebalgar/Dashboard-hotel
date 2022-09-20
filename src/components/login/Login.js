@@ -1,29 +1,36 @@
 
 import React, {useState} from "react";
-import { Navigate } from "react-router-dom";
+import {useNavigate, useLocation} from "react-router-dom";
 import styled from "styled-components";
 
 
 
 export const Login = (props) => {
-  
-const [username, setusername] = useState("celia");
-const [password, setpassword] = useState("12345");
+const navigate = useNavigate();
+const location = useLocation();
 
-const users =[{
-    username:"celia",
-    password: "123456"
-}]
+  
+const [username, setUsername] = useState("");
+const [password, setPassword] = useState("");
+
+//const users =[{
+    //username:"celia",
+    //password: "12345"
+//}]
 
 
     const handleSubmit = event =>{
         event.preventDefault();
-        const account = users.find((user)=> user.username === username);
-        if(account && account.password === password){
+        // const account = users.find((user)=> user.username === username);
+       // console.log(account, username, password, users);
+        
+        if(username === "celia" && password === "12345"){
             props.setAuth(true);
-            return <Navigate to="/" />;
-            
-        }
+            const from = location.state?.from?.pathname || "/";
+            navigate(from, {replace:true}) ;  
+          }else{
+            props.setAuth(false);
+          }
     }
 
     const Container = styled.div`
@@ -98,7 +105,7 @@ const users =[{
           type="text" 
           name="Username" 
           value={username}
-          onChange={(e)=>setusername(e.target.value)}
+          onChange={(e)=>setUsername(e.target.value)}
           required
            />
           <Label>
@@ -108,7 +115,7 @@ const users =[{
           type="password" 
           name="password" 
           value={password}
-          onChange={(e)=>setpassword(e.target.value)}
+          onChange={(e)=>setPassword(e.target.value)}
           required
             />
           <Button type="submit">
