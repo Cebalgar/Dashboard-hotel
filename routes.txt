@@ -1,0 +1,18 @@
+Bookings:
+/bookings     -> Bookings ->Get/bookings    / Todos los bookins
+/bookings/:id -> Bookings -> Put/bookings/:id - Delete/bookings/:id    / editar y eliminar
+/bookings/new -> NewBooking->Post/bookings/:id / Nuevo booking
+
+Rooms: 
+/rooms     -> Rooms -> Get/rooms    / Todas las habitaciones
+/rooms/:id -> Rooms -> Put/rooms/:id - Delete/rooms/:id    / editar y eliminar
+/rooms/new -> NewRooms -> Post/rooms/:id     /Nueva habitación
+
+Users: 
+/users     -> Users -> Get/users    /Todos los usuarios
+/users/:id -> Users -> Put/users/:id - Delete/users/:id    /editar y eliminar
+/users/new -> NewUser -> Post/users/:id     / Nuevo usuario
+
+Contact:
+/contact     -> Contacts -> Get/users
+/contact/:id->  -> Put/contacts/:id - Delete/contacts/:id
