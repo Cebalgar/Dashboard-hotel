@@ -47,85 +47,83 @@ useEffect(()=>{
 
   return (
     <div className="App">
-
-      <Routes>
-              <Route path="login" element={<Login setAuth={setAuth} />} />
-
-            
+    <Navbar/>
+        <Routes>
+            <Route path="login" element={<Login setAuth={setAuth} />} />
             <Route element={
               <PrivateRoute>
-                <Navbar setAuth={setAuth}/>
+                <Navbar setAuth={setAuth} auth={auth}/>
               </PrivateRoute>
             }/> 
       
               <Route path="/" 
               element={
-              <PrivateRoute>
+              <PrivateRoute auth={auth}>
                 <Dashboard/>
               </PrivateRoute>}
              />
               <Route path="/bookings" 
               element={
-              <PrivateRoute>
+              <PrivateRoute auth={auth}>
                 <Bookings/>
-              </PrivateRoute>}/>
+              </PrivateRoute>
+              }/>
               <Route path="/bookings/:id" 
               element={
-              <PrivateRoute>
+              <PrivateRoute auth={auth}>
                 <BookingDetails/>
               </PrivateRoute>}/>
               <Route path="/bookings/new" 
               element={
-              <PrivateRoute>
+              <PrivateRoute auth={auth}>
                 <NewBooking/>
               </PrivateRoute>}
               />
               <Route path="/rooms"
                element={
-             
-                <Rooms/>}
-          
-
-              />
+             <PrivateRoute auth={auth}>
+               <Rooms/>
+             </PrivateRoute>}
+               />
               <Route path="/rooms/:id" 
               element={
-              <PrivateRoute>
+              <PrivateRoute auth={auth}>
                 <RoomDetails/>
               </PrivateRoute>}
               />
               <Route path="/rooms/new" 
               element={
-              <PrivateRoute>
+              <PrivateRoute auth={auth}>
                 <NewRoom/>
               </PrivateRoute>}
               />
               <Route path="/users" 
               element={
-              <PrivateRoute>
+              <PrivateRoute auth={auth}>
                 <Users/>
               </PrivateRoute>}
               />
               <Route path="/users/id" 
               element={
-              <PrivateRoute>
+              <PrivateRoute auth={auth}>
                 <UserDetails/>
               </PrivateRoute>}
               />
               <Route path="users/new" 
               element={
-              <PrivateRoute>
+              <PrivateRoute auth={auth}>
                 <NewUser/>
               </PrivateRoute>}
               />
               <Route path="/contacts" 
               element={
-              <PrivateRoute>
+              <PrivateRoute auth={auth}>
                 <Contacts/>
               </PrivateRoute>}
               />
               <Route path="/contacts/:id" 
               element={
-              <PrivateRoute>
+              <PrivateRoute auth={auth}>
                 <ContactDetails/>
               </PrivateRoute>}
               />

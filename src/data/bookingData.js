@@ -5,7 +5,7 @@ export const bookingData = [
         "order_date": "2022/03/13",
         "check_in": "2021/09/21",
         "check_out": "2022/09/16",
-        "request": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.\n\nVestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.\n\nDuis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.",
+        "request": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.",
         "room_number": 126,
         "room_type": "Single Bed",
         "status": "Check In"
@@ -27,7 +27,7 @@ export const bookingData = [
         "order_date": "2022/07/04",
         "check_in": "2022/07/24",
         "check_out": "2022/07/31",
-        "request": "Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.\n\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+        "request": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
         "room_number": 144,
         "room_type": "Suite",
         "status": "In Progres"
@@ -38,7 +38,7 @@ export const bookingData = [
         "order_date": "2022/04/08",
         "check_in": "2021/11/12",
         "check_out": "2022/07/22",
-        "request": "Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.\n\nPhasellus in felis. Donec semper sapien a libero. Nam dui.",
+        "request": "Phasellus in felis. Donec semper sapien a libero. Nam dui.",
         "room_number": 116,
         "room_type": "Double Superior",
         "status": "Check Out"
@@ -49,7 +49,7 @@ export const bookingData = [
         "order_date": "2022/06/12",
         "check_in": "2022/04/10",
         "check_out": "2022/08/15",
-        "request": "Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.\n\nPraesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.\n\nCras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+        "request": "In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
         "room_number": 117,
         "room_type": "Double Bed",
         "status": "In Progres"
@@ -82,7 +82,7 @@ export const bookingData = [
         "order_date": "2021/09/29",
         "check_in": "2021/10/22",
         "check_out": "2022/08/19",
-        "request": "In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.\n\nMaecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.\n\nMaecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.",
+        "request": "Luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.",
         "room_number": 129,
         "room_type": "Double Bed",
         "status": "In Progres"
@@ -93,7 +93,7 @@ export const bookingData = [
         "order_date": "2022/04/12",
         "check_in": "2022/06/27",
         "check_out": "2022/05/29",
-        "request": "Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.\n\nMorbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.\n\nFusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.",
+        "request": "Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.",
         "room_number": 104,
         "room_type": "Single Bed",
         "status": "Check In"
@@ -104,7 +104,7 @@ export const bookingData = [
         "order_date": "2022/07/23",
         "check_in": "2022/07/30",
         "check_out": "2022/08/29",
-        "request": "In congue. Etiam justo. Etiam pretium iaculis justo.\n\nIn hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.",
+        "request": "Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.",
         "room_number": 124,
         "room_type": "Suite",
         "status": "In Progres"
@@ -115,7 +115,7 @@ export const bookingData = [
         "order_date": "2022/05/16",
         "check_in": "2022/07/18",
         "check_out": "2021/11/23",
-        "request": "Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.\n\nSed ante. Vivamus tortor. Duis mattis egestas metus.\n\nAenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.",
+        "request": "Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.",
         "room_number": 119,
         "room_type": "Double Bed",
         "status": "Check Out"
@@ -126,7 +126,7 @@ export const bookingData = [
         "order_date": "2021/10/11",
         "check_in": "2022/05/11",
         "check_out": "2022/06/28",
-        "request": "Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.\n\nFusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.",
+        "request": "Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.",
         "room_number": 107,
         "room_type": "Double Bed",
         "status": "In Progres"
@@ -137,7 +137,7 @@ export const bookingData = [
         "order_date": "2022/05/27",
         "check_in": "2022/05/22",
         "check_out": "2022/03/12",
-        "request": "Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.\n\nIn sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.\n\nSuspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.",
+        "request": "Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.",
         "room_number": 117,
         "room_type": "Double Bed",
         "status": "In Progres"
@@ -148,7 +148,7 @@ export const bookingData = [
         "order_date": "2022/07/22",
         "check_in": "2021/09/22",
         "check_out": "2022/01/22",
-        "request": "Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.\n\nCras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+        "request": "Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
         "room_number": 107,
         "room_type": "Double Superior",
         "status": "Check In"
@@ -159,7 +159,7 @@ export const bookingData = [
         "order_date": "2022/03/19",
         "check_in": "2021/12/18",
         "check_out": "2022/07/21",
-        "request": "Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.\n\nPraesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.\n\nCras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+        "request": "Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
         "room_number": 134,
         "room_type": "Double Superior",
         "status": "Check In"
@@ -170,7 +170,7 @@ export const bookingData = [
         "order_date": "2022/06/25",
         "check_in": "2022/04/05",
         "check_out": "2022/01/05",
-        "request": "Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.\n\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n\nEtiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.",
+        "request": "Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.",
         "room_number": 106,
         "room_type": "Double Superior",
         "status": "Check Out"
@@ -192,7 +192,7 @@ export const bookingData = [
         "order_date": "2022/02/17",
         "check_in": "2022/05/21",
         "check_out": "2022/03/12",
-        "request": "Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.\n\nDonec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.",
+        "request": "Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.",
         "room_number": 131,
         "room_type": "Suite",
         "status": "Check In"
@@ -203,7 +203,7 @@ export const bookingData = [
         "order_date": "2022/09/15",
         "check_in": "2022/08/28",
         "check_out": "2022/08/07",
-        "request": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.\n\nVestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.",
+        "request": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.",
         "room_number": 129,
         "room_type": "Double Superior",
         "status": "Check In"
@@ -214,7 +214,7 @@ export const bookingData = [
         "order_date": "2021/12/17",
         "check_in": "2022/08/26",
         "check_out": "2022/08/15",
-        "request": "Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.",
+        "request": " Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.",
         "room_number": 126,
         "room_type": "Double Bed",
         "status": "Check Out"
@@ -236,7 +236,7 @@ export const bookingData = [
         "order_date": "2022/02/08",
         "check_in": "2022/03/03",
         "check_out": "2022/03/06",
-        "request": "Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.\n\nIn quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.\n\nMaecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.",
+        "request": "Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.",
         "room_number": 130,
         "room_type": "Single Bed",
         "status": "In Progres"
@@ -247,7 +247,7 @@ export const bookingData = [
         "order_date": "2021/10/06",
         "check_in": "2022/06/28",
         "check_out": "2022/09/07",
-        "request": "Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.\n\nMorbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.",
+        "request": "Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.",
         "room_number": 133,
         "room_type": "Single Bed",
         "status": "In Progres"
@@ -258,7 +258,7 @@ export const bookingData = [
         "order_date": "2022/05/07",
         "check_in": "2022/06/21",
         "check_out": "2021/12/18",
-        "request": "Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.\n\nNam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.",
+        "request": "Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.",
         "room_number": 129,
         "room_type": "Double Bed",
         "status": "Check Out"
@@ -302,7 +302,7 @@ export const bookingData = [
         "order_date": "2022/04/16",
         "check_in": "2022/07/21",
         "check_out": "2022/02/07",
-        "request": "Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.\n\nCurabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.",
+        "request": "Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.",
         "room_number": 131,
         "room_type": "Double Superior",
         "status": "Check In"
@@ -313,7 +313,7 @@ export const bookingData = [
         "order_date": "2022/01/16",
         "check_in": "2022/04/03",
         "check_out": "2021/10/06",
-        "request": "In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.\n\nSuspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.\n\nMaecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.",
+        "request": "Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.",
         "room_number": 111,
         "room_type": "Suite",
         "status": "Check In"
@@ -335,7 +335,7 @@ export const bookingData = [
         "order_date": "2021/11/25",
         "check_in": "2022/06/12",
         "check_out": "2022/01/28",
-        "request": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.",
+        "request": "Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.",
         "room_number": 139,
         "room_type": "Double Superior",
         "status": "Check In"
@@ -368,7 +368,7 @@ export const bookingData = [
         "order_date": "2022/02/05",
         "check_in": "2022/05/23",
         "check_out": "2022/07/02",
-        "request": "Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.\n\nCurabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.",
+        "request": " Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.",
         "room_number": 141,
         "room_type": "Double Bed",
         "status": "Check Out"
@@ -379,7 +379,7 @@ export const bookingData = [
         "order_date": "2021/12/01",
         "check_in": "2022/02/10",
         "check_out": "2021/09/20",
-        "request": "Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.",
+        "request": " Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.",
         "room_number": 112,
         "room_type": "Suite",
         "status": "In Progres"
@@ -390,7 +390,7 @@ export const bookingData = [
         "order_date": "2022/09/14",
         "check_in": "2021/11/29",
         "check_out": "2021/10/03",
-        "request": "Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.\n\nDonec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.",
+        "request": "Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.",
         "room_number": 148,
         "room_type": "Single Bed",
         "status": "Check Out"
@@ -401,7 +401,7 @@ export const bookingData = [
         "order_date": "2022/01/04",
         "check_in": "2022/01/09",
         "check_out": "2022/08/13",
-        "request": "Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.\n\nInteger tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.",
+        "request": "Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.",
         "room_number": 102,
         "room_type": "Single Bed",
         "status": "Check In"
@@ -412,7 +412,7 @@ export const bookingData = [
         "order_date": "2022/07/13",
         "check_in": "2021/12/27",
         "check_out": "2022/03/10",
-        "request": "Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.\n\nProin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.",
+        "request": " Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.",
         "room_number": 107,
         "room_type": "Suite",
         "status": "Check Out"
@@ -467,7 +467,7 @@ export const bookingData = [
         "order_date": "2022/06/01",
         "check_in": "2022/05/11",
         "check_out": "2022/05/04",
-        "request": "Sed ante. Vivamus tortor. Duis mattis egestas metus.\n\nAenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.",
+        "request": "Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.",
         "room_number": 121,
         "room_type": "Suite",
         "status": "Check Out"
@@ -478,7 +478,7 @@ export const bookingData = [
         "order_date": "2022/04/03",
         "check_in": "2021/10/25",
         "check_out": "2022/06/24",
-        "request": "Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.",
+        "request": "Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.",
         "room_number": 146,
         "room_type": "Suite",
         "status": "Check In"
@@ -489,7 +489,7 @@ export const bookingData = [
         "order_date": "2022/09/17",
         "check_in": "2022/03/03",
         "check_out": "2022/07/02",
-        "request": "Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.\n\nNullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.",
+        "request": "nNullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.",
         "room_number": 145,
         "room_type": "Suite",
         "status": "Check In"
@@ -500,7 +500,7 @@ export const bookingData = [
         "order_date": "2021/10/27",
         "check_in": "2022/01/20",
         "check_out": "2022/03/31",
-        "request": "Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.\n\nFusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.",
+        "request": "Laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.",
         "room_number": 124,
         "room_type": "Single Bed",
         "status": "Check In"
@@ -511,7 +511,7 @@ export const bookingData = [
         "order_date": "2021/10/06",
         "check_in": "2022/08/12",
         "check_out": "2022/06/16",
-        "request": "Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.\n\nMorbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.",
+        "request": " In est risus, auctor sed, tristique in, tempus sit amet, sem.",
         "room_number": 140,
         "room_type": "Suite",
         "status": "In Progres"
@@ -522,7 +522,7 @@ export const bookingData = [
         "order_date": "2022/01/08",
         "check_in": "2022/03/16",
         "check_out": "2022/01/03",
-        "request": "Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.\n\nCurabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.\n\nInteger tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.",
+        "request": "Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.",
         "room_number": 127,
         "room_type": "Double Superior",
         "status": "Check In"
@@ -533,7 +533,7 @@ export const bookingData = [
         "order_date": "2021/10/10",
         "check_in": "2022/02/11",
         "check_out": "2021/11/11",
-        "request": "Sed ante. Vivamus tortor. Duis mattis egestas metus.\n\nAenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.",
+        "request": "Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.",
         "room_number": 110,
         "room_type": "Single Bed",
         "status": "Check Out"
@@ -544,7 +544,7 @@ export const bookingData = [
         "order_date": "2021/10/03",
         "check_in": "2022/07/11",
         "check_out": "2022/07/28",
-        "request": "Sed ante. Vivamus tortor. Duis mattis egestas metus.\n\nAenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.\n\nQuisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.",
+        "request": "Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.",
         "room_number": 119,
         "room_type": "Single Bed",
         "status": "Check In"

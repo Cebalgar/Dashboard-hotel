@@ -1,47 +1,46 @@
 
 import React, {useState} from "react";
 
-import {useNavigate} from "react-router-dom";
+import {useLocation, useNavigate} from "react-router-dom";
 import styled from "styled-components";
 
 
 
 export const Login = (props) => {
 const navigate = useNavigate();
-
-//const shouldRediedt=true;
+const location=useLocation();
 
   
 const [username, setUsername] = useState("celia");
 const [password, setPassword] = useState("12345");
 
-// const users =[{
-//     username:"celia",
-//     password: "12345"
-// }]
+ const users =[{
+    username:"celia",
+     password: "12345"
+}]
 
-// useEffect(()=>{
-//   if(shouldRediedt)
-//   navigate("/")
-// },[navigate, shouldRediedt])
 
 
 const handleSubmit = event =>{
   event.preventDefault();
-  // const account = users.find((user)=> user.username === username);
- // console.log(account, username, password, users);
+  const account = users.find((user)=> user.username === username);
+  //console.log(account, username, password, users);
   
-  if(username === "celia" && password === "12345"){
+  if(account && account.password === password){
       props.setAuth(true);
 
-     return  navigate('/') ;  
-  }
+      let from = location.state?.from?.pathname || "/";
+      navigate(from, { replace: true });
+    } else {
+      props.setAuth(false);
+    }
+  
     
 }
 
     const Container = styled.div`
     width: 100%;
-    height: 100%;
+    height: 80%;
     position: relative;
     background-color: #f8f8f8;
     font-family: "Poppins", sans-serif;
@@ -94,9 +93,7 @@ const handleSubmit = event =>{
       background-color: #135846;
     }
     `;
-    const P = styled.p`
-    font-size: 12px;
-    `;
+   
 
   return (
     <Container>
@@ -127,7 +124,7 @@ const handleSubmit = event =>{
           <Button type="submit">
             Login
           </Button>
-          <P>click "Login"</P>
+      
           </Form>
       </Subcontainer>
     </Container>
