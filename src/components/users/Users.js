@@ -1,15 +1,24 @@
 import React from 'react'
 import { userData } from '../../data/userData'
 import {Table,Tr, Th, Td} from '../../styled/Table'
-import {Container} from '../../styled/Containers'
+import {Container,ContainerMenu} from '../../styled/Containers'
+import { ButtonStatusUser,ButtonMenu } from '../../styled/Buttons'
 
 
-const Users = () => {
+
+const Users = (props) => {
   const users= userData;
 
 
   return (
     <>
+
+    <ContainerMenu>
+      <li><ButtonMenu>All Employee</ButtonMenu></li>
+      <li><ButtonMenu>Active Employee</ButtonMenu></li>
+      <li><ButtonMenu>Inactive Employee</ButtonMenu></li>
+    </ContainerMenu>
+    
     <Container>
       <Table>
         <tbody>
@@ -18,7 +27,6 @@ const Users = () => {
             <Th>Name</Th>
             <Th>Stard Date</Th>
             <Th>Job Desk</Th>
-            <Th>Schedule</Th>
             <Th>Contact</Th>
             <Th>Status</Th>
           </Tr>
@@ -29,7 +37,11 @@ const Users = () => {
               <Td>{user.starte_date}</Td>
               <Td>{user.work_description}</Td>
               <Td>{user.phone}</Td>
-              <Td>{user.status}</Td>
+              <Td>
+              <ButtonStatusUser status ={user.status}>
+                {user.status}
+              </ButtonStatusUser>
+              </Td>
              
               </Tr>
           ))}   

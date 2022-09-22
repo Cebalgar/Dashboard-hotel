@@ -47,7 +47,7 @@ useEffect(()=>{
 
   return (
     <div className="App">
-    <Navbar/>
+  <Navbar/>
         <Routes>
             <Route path="login" element={<Login setAuth={setAuth} />} />
             <Route element={

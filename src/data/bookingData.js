@@ -30,7 +30,7 @@ export const bookingData = [
         "request": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
         "room_number": 144,
         "room_type": "Suite",
-        "status": "In Progres"
+        "status": "In Progress"
     },
     {
         "id": 4,
@@ -52,7 +52,7 @@ export const bookingData = [
         "request": "In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
         "room_number": 117,
         "room_type": "Double Bed",
-        "status": "In Progres"
+        "status": "In Progress"
     },
     {
         "id": 6,
@@ -85,7 +85,7 @@ export const bookingData = [
         "request": "Luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.",
         "room_number": 129,
         "room_type": "Double Bed",
-        "status": "In Progres"
+        "status": "In Progress"
     },
     {
         "id": 9,
@@ -107,7 +107,7 @@ export const bookingData = [
         "request": "Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.",
         "room_number": 124,
         "room_type": "Suite",
-        "status": "In Progres"
+        "status": "In Progress"
     },
     {
         "id": 11,
@@ -129,7 +129,7 @@ export const bookingData = [
         "request": "Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.",
         "room_number": 107,
         "room_type": "Double Bed",
-        "status": "In Progres"
+        "status": "In Progress"
     },
     {
         "id": 13,
@@ -140,7 +140,7 @@ export const bookingData = [
         "request": "Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.",
         "room_number": 117,
         "room_type": "Double Bed",
-        "status": "In Progres"
+        "status": "In Progress"
     },
     {
         "id": 14,
@@ -228,7 +228,7 @@ export const bookingData = [
         "request": "Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.",
         "room_number": 121,
         "room_type": "Single Bed",
-        "status": "In Progres"
+        "status": "In Progress"
     },
     {
         "id": 22,
@@ -239,7 +239,7 @@ export const bookingData = [
         "request": "Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.",
         "room_number": 130,
         "room_type": "Single Bed",
-        "status": "In Progres"
+        "status": "In Progress"
     },
     {
         "id": 23,
@@ -250,7 +250,7 @@ export const bookingData = [
         "request": "Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.",
         "room_number": 133,
         "room_type": "Single Bed",
-        "status": "In Progres"
+        "status": "In Progress"
     },
     {
         "id": 24,
@@ -272,7 +272,7 @@ export const bookingData = [
         "request": "In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.",
         "room_number": 132,
         "room_type": "Suite",
-        "status": "In Progres"
+        "status": "In Progress"
     },
     {
         "id": 26,
@@ -349,7 +349,7 @@ export const bookingData = [
         "request": "Sed ante. Vivamus tortor. Duis mattis egestas metus.",
         "room_number": 124,
         "room_type": "Double Superior",
-        "status": "In Progres"
+        "status": "In Progress"
     },
     {
         "id": 33,
@@ -360,7 +360,7 @@ export const bookingData = [
         "request": "Sed ante. Vivamus tortor. Duis mattis egestas metus.",
         "room_number": 115,
         "room_type": "Double Superior",
-        "status": "In Progres"
+        "status": "In Progress"
     },
     {
         "id": 34,
@@ -382,7 +382,7 @@ export const bookingData = [
         "request": " Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.",
         "room_number": 112,
         "room_type": "Suite",
-        "status": "In Progres"
+        "status": "In Progress"
     },
     {
         "id": 36,
@@ -514,7 +514,7 @@ export const bookingData = [
         "request": " In est risus, auctor sed, tristique in, tempus sit amet, sem.",
         "room_number": 140,
         "room_type": "Suite",
-        "status": "In Progres"
+        "status": "In Progress"
     },
     {
         "id": 48,

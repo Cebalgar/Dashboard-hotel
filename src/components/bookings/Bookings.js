@@ -2,13 +2,25 @@ import React from 'react'
 import { bookingData } from '../../data/bookingData'
 import {Table,Tr, Th, Td} from '../../styled/Table'
 import {Container} from '../../styled/Containers'
+import { ButtonStatusBooking, ButtonViewNotes } from '../../styled/Buttons'
+import { ContainerMenu } from '../../styled/Containers'
+import { ButtonMenu } from '../../styled/Buttons'
 
-const Bookings = () => {
+const Bookings = (props) => {
   const bookings = bookingData;
   
   return (
     <>
+     <ContainerMenu>
+      <li><ButtonMenu>All Bookings</ButtonMenu></li>
+      <li><ButtonMenu>Checking In</ButtonMenu></li>
+      <li><ButtonMenu>Cheking Out</ButtonMenu></li>
+      <li><ButtonMenu>In Progress</ButtonMenu></li>
+     
+    </ContainerMenu>
+   
     <Container>
+    
       <Table>
         <tbody>
           <Tr>
@@ -20,6 +32,7 @@ const Bookings = () => {
             <Th>Special Request</Th>
             <Th>Room Type</Th>
             <Th>Status</Th>
+            
           </Tr>
           {bookings.map((booking) => (
               <Tr>
@@ -28,9 +41,12 @@ const Bookings = () => {
               <Td>{booking.order_date}</Td>
               <Td>{booking.check_in }</Td>
               <Td>{booking.check_out}</Td>
-              <Td>{booking.request}</Td>
+              <Td>
+              <ButtonViewNotes>View Notes</ButtonViewNotes>
+              </Td>
               <Td>{booking.room_type}</Td>
-              <Td>{booking.status}</Td>
+              <Td>
+              <ButtonStatusBooking status={booking.status}>{booking.status}</ButtonStatusBooking></Td>
               </Tr>
           ))}   
         </tbody>

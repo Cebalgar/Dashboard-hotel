@@ -1,6 +1,5 @@
 
 import React, {useState} from "react";
-
 import {useLocation, useNavigate} from "react-router-dom";
 import styled from "styled-components";
 
@@ -19,8 +18,6 @@ const [password, setPassword] = useState("12345");
      password: "12345"
 }]
 
-
-
 const handleSubmit = event =>{
   event.preventDefault();
   const account = users.find((user)=> user.username === username);
@@ -38,12 +35,11 @@ const handleSubmit = event =>{
     
 }
 
-    const Container = styled.div`
+    const ContainerLogin = styled.div`
     width: 100%;
     height: 80%;
     position: relative;
     background-color: #f8f8f8;
-    font-family: "Poppins", sans-serif;
     font-size: 20px;
     justify-content: center;
     text-align: center;
@@ -64,11 +60,11 @@ const handleSubmit = event =>{
     const H2 = styled.h2`
     color: #e23428;
     line-height: 30px;
-    cursor: default;
     `;
     const Label = styled.label`
     display: block;
     text-align: left;
+    margin-top: 30px;
     `;
     const Input = styled.input`
     font-size: 18px;
@@ -82,7 +78,6 @@ const handleSubmit = event =>{
     display: block;
     border: none;
     border-radius: 12px;
-    font-family: "Poppins", sans-serif;
     font-size: 18px;
     padding: 10px 40px;
     color: #135846;
@@ -96,7 +91,7 @@ const handleSubmit = event =>{
    
 
   return (
-    <Container>
+    <ContainerLogin>
       <Subcontainer>
         <Form onSubmit={handleSubmit}>
           <img src="" alt="" />
@@ -127,6 +122,6 @@ const handleSubmit = event =>{
       
           </Form>
       </Subcontainer>
-    </Container>
+    </ContainerLogin>
   );
 }
