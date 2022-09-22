@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Dashboard-hotel/static/css/main.22045837.css",
+    "main.js": "/Dashboard-hotel/static/js/main.83225f42.js",
+    "index.html": "/Dashboard-hotel/index.html",
+    "main.22045837.css.map": "/Dashboard-hotel/static/css/main.22045837.css.map",
+    "main.83225f42.js.map": "/Dashboard-hotel/static/js/main.83225f42.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.22045837.css",
+    "static/js/main.83225f42.js"
+  ]
+}
