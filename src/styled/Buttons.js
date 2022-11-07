@@ -1,38 +1,34 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const Button = styled.button`
-width: 70%;
-max-width:160px;
-height: 48px;
-border-radius: 12px;
-background:white;
-font-family:poppins;
-background:#135846;
-color:#FFFFFF;
-
+  width: 70%;
+  max-width: 160px;
+  height: 48px;
+  border-radius: 12px;
+  background: white;
+  font-family: poppins;
+  background: #135846;
+  color: #ffffff;
 `;
 export const ButtonEdit = styled(Button)`
-background:#EBF1EF;
-color: #135846;
-margin-top: 10px;
-margin-bottom: 10px;
-border: none;
-
+  background: #ebf1ef;
+  color: #135846;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: none;
 `;
-export const ButtonViewNotes=styled(Button)`
-color: #212121;
-background-color: #EEF9F2;
-border: none;
-z-index: 0;
-    &:hover{
-        background:#ffffff;
-        border: 1px solid #799283;
-        color:#799283;
-    }
-
+export const ButtonViewNotes = styled(Button)`
+  color: #212121;
+  background-color: #eef9f2;
+  border: none;
+  &:hover {
+    background: #ffffff;
+    border: 1px solid #799283;
+    color: #799283;
+  }
 `;
-export const ButtonStatusBooking=styled(Button)`
-color: ${(props) =>
+export const ButtonStatusBooking = styled(Button)`
+  color: ${(props) =>
     props.status === "In Progress"
       ? "#B66B13"
       : "" || props.status === "Check In"
@@ -51,7 +47,7 @@ color: ${(props) =>
   width: 70%;
   font-size: 16px;
   font-weight: 400;
-  margin: 16PX;
+  margin: 16px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -59,20 +55,17 @@ color: ${(props) =>
   &:hover {
     opacity: 1;
   }
-
 `;
-export const ButtonStatusRoom=styled(Button)`
+export const ButtonStatusRoom = styled(Button)`
   color: white;
-  font-size: 0.9vw;
+  font-size: 14px;
   text-align: center;
   background-color: ${(props) =>
     props.status === "Available" ? "green" : "red"};
 `;
 
-
-export const ButtonStatusUser=styled(Button)`
-  color:${(props) =>
-    props.status === "Active" ? "green" : "red"} ;
+export const ButtonStatusUser = styled(Button)`
+  color: ${(props) => (props.status === "Active" ? "green" : "red")};
   text-align: center;
   background-color: transparent;
   border: none;
@@ -82,28 +75,14 @@ export const ButtonMenu = styled.button`
   background: transparent;
   border-radius: 12px;
   border: none;
-  color: #6E6E6E;
+  color: #6e6e6e;
   font-size: 14px;
   margin: auto;
   margin-right: 20px;
   height: 55px;
   width: 120px;
- 
-  &:hover{
-    color:#135846;
-   
+
+  &:hover {
+    color: #135846;
   }
- 
 `;
-
-
-
-
-
-
-
-
-
-
-
-

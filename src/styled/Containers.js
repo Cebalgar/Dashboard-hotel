@@ -6,23 +6,18 @@ export const Container = styled.div`
   margin: 16px auto;
   border-radius: 12px;
   width: 75%;
-  height: 600px;
-  overflow-y: scroll;
+  height: 100%;
   background-color: #fff;
 `;
-export const ContainerMenu=styled.ul`
-display: flex;
-flex-direction: row;
-width: 40%;
-margin-top: 56px;
-padding-left:30px;
-list-style: none;
-
+export const ContainerMenu = styled.ul`
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  margin-top: 56px;
+  padding-left: 30px;
+  list-style: none;
 `;
-export const ContainerDasboard = styled(Container)`
-width: 100%;
-background:#F8F8F8;
-
+export const ContainerDasboard = styled.div`
+  width: 100%;
+  background: #f8f8f8;
 `;
-
-
