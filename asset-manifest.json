@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/Dashboard-hotel/static/css/main.22045837.css",
-    "main.js": "/Dashboard-hotel/static/js/main.83225f42.js",
+    "main.css": "/Dashboard-hotel/static/css/main.04cb758f.css",
+    "main.js": "/Dashboard-hotel/static/js/main.69a81b66.js",
+    "static/media/img.png": "/Dashboard-hotel/static/media/img.4dc595fe2fb7b591cb41.png",
     "index.html": "/Dashboard-hotel/index.html",
-    "main.22045837.css.map": "/Dashboard-hotel/static/css/main.22045837.css.map",
-    "main.83225f42.js.map": "/Dashboard-hotel/static/js/main.83225f42.js.map"
+    "main.04cb758f.css.map": "/Dashboard-hotel/static/css/main.04cb758f.css.map",
+    "main.69a81b66.js.map": "/Dashboard-hotel/static/js/main.69a81b66.js.map"
   },
   "entrypoints": [
-    "static/css/main.22045837.css",
-    "static/js/main.83225f42.js"
+    "static/css/main.04cb758f.css",
+    "static/js/main.69a81b66.js"
   ]
 }
