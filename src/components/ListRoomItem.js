@@ -4,6 +4,7 @@ import { ButtonStatusRoom } from "../styled/Buttons";
 import {Td, Tr} from "../styled/Table";
 
 export const ListRoomItem = ({item, index,moveListItem}) => {
+  
   const [{ isDragging }, drag] = useDrag(()=> ({
     type: "item",
     item: {index},
@@ -12,7 +13,7 @@ export const ListRoomItem = ({item, index,moveListItem}) => {
     })
   }))
  
-  const [spec, drop] = useDrop({
+  const [, drop] = useDrop({
     accept: "item",
     hover: (item, monitor) => {
       const dragIndex = item.index;
