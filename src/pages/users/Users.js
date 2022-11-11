@@ -34,7 +34,7 @@ const Users = (props) => {
               <Th>Status</Th>
             </Tr>
             {users.map((user) => (
-              <Tr>
+              <Tr key = {user.id}>
                 <Td>{user.id}</Td>
                 <Td> <img src={user.photo} alt="" /> </Td>
                 <Td>{user.full_name}</Td>

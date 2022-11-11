@@ -83,7 +83,9 @@ export const SideBarNav = styled.ul`
 `;
 
 export const UserContainer = styled.div`
- 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 450px auto 48px;
   max-width: 240px;
   text-align: center;
@@ -97,12 +99,15 @@ export const UserContainer = styled.div`
   }
 `;
 export const ImgContainer = styled.div`
+  display: flex;
+  margin-top: 30px;
   margin-bottom:30px;
   width: 100px;
   height: 100px;
   border-radius: 13px;
   & img{
-    margin-left:60px;
+
+    align-self: center;
     width: 125px;
     height: 125px;
   }

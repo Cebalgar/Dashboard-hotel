@@ -1,20 +1,23 @@
 import Dashboard from "./components/Dashboard";
 import Navbar from "./components/Navbar";
 
-import Bookings from "./components/bookings/Bookings";
-import BookingDetails from "./components/bookings/BookingDetails";
-import NewBooking from "./components/bookings/NewBooking";
+import Bookings from "./pages/bookings/Bookings";
+import BookingDetails from "./pages/bookings/BookingDetails";
+import NewBooking from "./pages/bookings/NewBooking";
 
-import Rooms from "./components/rooms/Rooms";
-import RoomDetails from "./components/rooms/RoomDetails";
-import NewRoom from "./components/rooms/NewRoom";
+import Rooms from "./pages/rooms/Rooms";
+import RoomDetails from "./pages/rooms/RoomDetails";
+import NewRoom from "./pages/rooms/NewRoom";
 
-import Users from "./components/users/Users";
-import UserDetails from "./components/users/UserDetails";
-import NewUser from "./components/users/NewUser";
+import Users from "./pages/users/Users";
+import UserDetails from "./pages/users/UserDetails";
+import NewUser from "./pages/users/NewUser";
 
-import Contacts from "./components/contacts/Contacts";
-import ContactDetails from "./components/contacts/ContactDetails";
+import Contacts from "./pages/contacts/Contacts";
+import ContactDetails from "./pages/contacts/ContactDetails";
+
+import { DndProvider } from "react-dnd";
+import { HTML5Backend } from "react-dnd-html5-backend";
 
 import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 import { Login } from "./components/login/Login";
@@ -91,7 +94,9 @@ function App() {
           path="/rooms"
           element={
             <PrivateRoute auth={auth}>
-              <Rooms />
+              <DndProvider backend={HTML5Backend}>
+                <Rooms />
+              </DndProvider>
             </PrivateRoute>
           }
         />

@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const Button = styled.button`
-  width: 70%;
+  padding-left: 20px;
+  padding-right: 20px;
   max-width: 160px;
   height: 48px;
   border-radius: 12px;
@@ -44,10 +45,8 @@ export const ButtonStatusBooking = styled(Button)`
       : "" || props.status === "Check Out"
       ? "#FFEDEC"
       : ""};
-  width: 70%;
-  font-size: 16px;
-  font-weight: 400;
-  margin: 16px;
+  font-size: 14px;
+  font-weight: 700;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -57,16 +56,16 @@ export const ButtonStatusBooking = styled(Button)`
   }
 `;
 export const ButtonStatusRoom = styled(Button)`
+  padding-left:10px;
+  padding-right:10px;
   color: white;
   font-size: 14px;
-  text-align: center;
   background-color: ${(props) =>
     props.status === "Available" ? "green" : "red"};
 `;
 
 export const ButtonStatusUser = styled(Button)`
   color: ${(props) => (props.status === "Active" ? "green" : "red")};
-  text-align: center;
   background-color: transparent;
   border: none;
 `;
