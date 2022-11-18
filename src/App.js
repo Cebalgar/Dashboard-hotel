@@ -49,7 +49,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Routes>
-        <Route path="login" element={<Login setAuth={setAuth} />} />
+        <Route path="/login" element={<Login setAuth={setAuth} />} />
         <Route
           element={
             <PrivateRoute>

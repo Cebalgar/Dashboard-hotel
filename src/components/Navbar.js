@@ -26,7 +26,7 @@ import {
   H5,
 } from "../styled/SideBar";
 import { NavbTop, NavbarIcons, IconArrows, H6 } from "../styled/NavbTop";
-import { ButtonEdit } from "../styled/Buttons";
+import { ButtonEdit} from "../styled/Buttons";
 
 
 const Navbar = ({setAuth}) => {
@@ -122,8 +122,9 @@ const Navbar = ({setAuth}) => {
           <Link to="/bookings" onClick={() => setPage("Bookings")}>
             <FaRegBell className="icon" />
           </Link>
-          
-          <LogOut setAuth={setAuth} />
+       
+            <LogOut setAuth={setAuth} />
+    
       
         </NavbarIcons>
       </NavbTop>

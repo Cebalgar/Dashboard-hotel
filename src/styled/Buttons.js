@@ -85,3 +85,9 @@ export const ButtonMenu = styled.button`
     color: #135846;
   }
 `;
+export const ButtonLogout = styled.button`
+  border: none;
+  font-size: 30px;
+  background: transparent;
+
+`;
