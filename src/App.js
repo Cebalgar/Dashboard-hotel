@@ -22,38 +22,41 @@ import { HTML5Backend } from "react-dnd-html5-backend";
 import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 import { Login } from "./components/login/Login";
 
-import { useEffect, useState } from "react";
+import { useEffect, useContext } from "react";
+import { AuthContext } from "./context/AuthContext"
 
 import "./App.css";
 
-function PrivateRoute(props) {
+function PrivateRoute({children}) {
+  const {auth} = useContext(AuthContext);
   const location = useLocation();
 
-  if (!props.auth)
+  if (!auth)
     return <Navigate to="/login" state={{ from: location }} replace />;
 
-  return props.children;
-}
+  return children;
+};
 
 function App() {
-  const [auth, setAuth] = useState(localStorage.getItem("auth") !== null);
+  const {auth} = useContext(AuthContext);
+
 
   useEffect(() => {
     if (auth) {
-      localStorage.setItem("auth", "1");
+      localStorage.setItem("AuthUsers", JSON.stringify(auth));
     }
-    localStorage.removeItem("auth");
+    localStorage.removeItem("AuthUsers");
   }, [auth]);
 
   return (
     <div className="App">
       <Navbar />
       <Routes>
-        <Route path="/login" element={<Login setAuth={setAuth} />} />
+        <Route path="/login" element={<Login />} />
         <Route
           element={
             <PrivateRoute>
-              <Navbar setAuth={setAuth} auth={auth} />
+              <Navbar auth={auth} />
             </PrivateRoute>
           }
         />

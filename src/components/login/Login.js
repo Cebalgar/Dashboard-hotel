@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import { AuthContext } from "../../context/AuthContext";
+
 import {
   FormLogin,
   LogoContainer,
@@ -10,34 +12,49 @@ import {
 } from "../../styled/Login";
 import logo from "../../images/logo.png";
 
-export const Login = (props) => {
+
+
+
+export const Login = () => {
+  const {dispatch} = useContext(AuthContext)
   const navigate = useNavigate();
   const location = useLocation();
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+ 
+  const userData = [
+  {
+    username: 'celia@celia.es',
+    password: '123456',
+  },
+  {
+    username:'lidia@lidia.es',
+    password:'789123'
+  }
 
-  const [username, setUsername] = useState("celia");
-  const [password, setPassword] = useState("12345");
-
-  const users = [
-    {
-      username: "celia",
-      password: "12345",
-    },
-  ];
+]
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const account = users.find((user) => user.username === username);
-    //console.log(account, username, password, users);
-
-    if (account && account.password === password) {
-      props.setAuth(true);
-
-      let from = location.state?.from?.pathname || "/";
-      navigate(from, { replace: true });
-    } else {
-      props.setAuth(false);
-    }
+    const account = userData.find((user) => user.username === username) && 
+    userData.find((user) => user.password === password);
+    
+    if (account !== undefined) {
+     dispatch(
+      {
+        type: 'Login', 
+        payload:{
+          username: account.username,
+          password: account.password
+        } 
+      }
+     );
+    let from = location.state?.from?.pathname || "/";
+    navigate(from, { replace: true });
+    } 
   };
+
+
 
   return (
     <FormLogin onSubmit={handleSubmit}>
@@ -49,9 +66,10 @@ export const Login = (props) => {
       <Label>Username:</Label>
       <Input
         type="text"
-        name="Username"
+        name="user"
         value={username}
         onChange={(e) => setUsername(e.target.value)}
+        
       />
       <Label>Password:</Label>
       <Input
@@ -59,6 +77,7 @@ export const Login = (props) => {
         name="password"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
+        
       />
       <Button type="submit">Login</Button>
     </FormLogin>
