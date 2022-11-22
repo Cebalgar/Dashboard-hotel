@@ -1,14 +1,15 @@
 {
   "files": {
     "main.css": "/Dashboard-hotel/static/css/main.04cb758f.css",
-    "main.js": "/Dashboard-hotel/static/js/main.69a81b66.js",
+    "main.js": "/Dashboard-hotel/static/js/main.cbc745ed.js",
     "static/media/img.png": "/Dashboard-hotel/static/media/img.4dc595fe2fb7b591cb41.png",
+    "static/media/logo.png": "/Dashboard-hotel/static/media/logo.b66a1f8abe0838373163.png",
     "index.html": "/Dashboard-hotel/index.html",
     "main.04cb758f.css.map": "/Dashboard-hotel/static/css/main.04cb758f.css.map",
-    "main.69a81b66.js.map": "/Dashboard-hotel/static/js/main.69a81b66.js.map"
+    "main.cbc745ed.js.map": "/Dashboard-hotel/static/js/main.cbc745ed.js.map"
   },
   "entrypoints": [
     "static/css/main.04cb758f.css",
-    "static/js/main.69a81b66.js"
+    "static/js/main.cbc745ed.js"
   ]
 }
